@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <Icon name="Bus" size={32} className="mr-3 text-red-500" />
-              <h3 className="text-2xl font-heading font-bold">ТрансКомфорт</h3>
+              <h3 className="text-2xl font-heading font-bold">ПрофТРАНСТУР</h3>
             </div>
             <p className="text-gray-300 mb-4">
               Надежная транспортная компания с многолетним опытом пассажирских
@@ -101,7 +101,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 ТрансКомфорт. Все права защищены.
+            © 2024 ПрофТРАНСТУР. Все права защищены.
           </p>
         </div>
       </div>

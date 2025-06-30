@@ -66,7 +66,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="services" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-heading font-bold text-gray-900 mb-4">

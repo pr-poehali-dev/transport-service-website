@@ -61,7 +61,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="contact" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
@@ -276,28 +276,6 @@ export default function ContactForm() {
                       <p className="font-semibold">Режим работы</p>
                       <p className="text-gray-600">Круглосуточно</p>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-lg bg-red-50">
-                <CardContent className="p-6">
-                  <div className="text-center">
-                    <Icon
-                      name="Headphones"
-                      size={48}
-                      className="mx-auto mb-4 text-red-600"
-                    />
-                    <h3 className="text-xl font-heading font-semibold mb-2">
-                      Экстренная связь
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      Диспетчерская служба работает 24/7
-                    </p>
-                    <Button size="lg" className="bg-red-600 hover:bg-red-700">
-                      <Icon name="Phone" size={20} className="mr-2" />
-                      +7 (999) 911-00-00
-                    </Button>
                   </div>
                 </CardContent>
               </Card>

@@ -3,7 +3,10 @@ import Icon from "@/components/ui/icon";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-red-600 via-red-500 to-red-800 text-white relative overflow-hidden">
+    <section
+      id="hero"
+      className="min-h-screen bg-gradient-to-br from-red-600 via-red-500 to-red-800 text-white relative overflow-hidden pt-16"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-20">
         <div className="w-full h-full bg-red-900/20 bg-gradient-to-br from-transparent via-red-700/10 to-red-900/20"></div>
