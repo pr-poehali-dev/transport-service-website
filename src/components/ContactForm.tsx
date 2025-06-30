@@ -250,7 +250,7 @@ export default function ContactForm() {
                     <Icon name="Mail" size={20} className="mr-3 text-red-600" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-gray-600">info@transport.ru</p>
+                      <p className="text-gray-600">info@proftranstur.ru</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -262,7 +262,7 @@ export default function ContactForm() {
                     <div>
                       <p className="font-semibold">Адрес</p>
                       <p className="text-gray-600">
-                        г. Москва, ул. Транспортная, д. 123
+                        г. Ростов-на-Дону, переулок Быстрый 2В
                       </p>
                     </div>
                   </div>
