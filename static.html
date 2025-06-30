@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПрофТрансТур - Надежные перевозки</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚌</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🚌</span>
+                <span class="logo-text">ПрофТрансТур</span>
+            </div>
+            <nav class="nav">
+                <a href="#hero" class="nav-link">Главная</a>
+                <a href="#services" class="nav-link">Услуги</a>
+                <a href="#fleet" class="nav-link">Автопарк</a>
+                <a href="#gallery" class="nav-link">Галерея</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-icon">🚌</div>
+            <h1 class="hero-title">
+                Надежные<br>
+                <span class="text-accent">Перевозки</span>
+            </h1>
+            <p class="hero-subtitle">
+                Комфортные пассажирские перевозки по городу и междугородние маршруты. 
+                Современный автопарк и профессиональные водители.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="openContactModal()">
+                    📞 Заказать сейчас
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('fleet')">
+                    🚗 Наш автопарк
+                </button>
+            </div>
+            <div class="hero-features">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Городские перевозки</h3>
+                    <p>Комфортные поездки по городу</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛣️</div>
+                    <h3>Междугородние рейсы</h3>
+                    <p>Надежные дальние маршруты</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Групповые поездки</h3>
+                    <p>Корпоративные и туристические</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наши услуги</h2>
+                <p>Полный спектр пассажирских перевозок для любых потребностей</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📍</div>
+                    <h3>Городские перевозки</h3>
+                    <p>Комфортные поездки по городу с опытными водителями. Современные автобусы и микроавтобусы для городских маршрутов.</p>
+                    <ul class="service-features">
+                        <li>✓ Регулярные рейсы</li>
+                        <li>✓ Комфортные сидения</li>
+                        <li>✓ Кондиционер</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛣️</div>
+                    <h3>Междугородние рейсы</h3>
+                    <p>Надежные дальние перевозки между городами. Безопасность и пунктуальность - наши главные приоритеты.</p>
+                    <ul class="service-features">
+                        <li>✓ Дальние маршруты</li>
+                        <li>✓ Wi-Fi в автобусах</li>
+                        <li>✓ Остановки для отдыха</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📷</div>
+                    <h3>Туристические поездки</h3>
+                    <p>Организуем комфортные туристические поездки и экскурсии. Индивидуальный подход к каждой группе.</p>
+                    <ul class="service-features">
+                        <li>✓ Экскурсионные туры</li>
+                        <li>✓ Гид-сопровождение</li>
+                        <li>✓ Гибкие маршруты</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Корпоративные перевозки</h3>
+                    <p>Деловые поездки для компаний и организаций. Обеспечиваем пунктуальность и комфорт для бизнес-клиентов.</p>
+                    <ul class="service-features">
+                        <li>✓ Трансфер сотрудников</li>
+                        <li>✓ Деловые поездки</li>
+                        <li>✓ Корпоративные тарифы</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💖</div>
+                    <h3>Свадебные перевозки</h3>
+                    <p>Торжественные перевозки для особых случаев. Украшение автобусов и индивидуальное обслуживание.</p>
+                    <ul class="service-features">
+                        <li>✓ Украшение автобусов</li>
+                        <li>✓ Музыкальное сопровождение</li>
+                        <li>✓ Фото и видеосьемка</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎉</div>
+                    <h3>Праздничные мероприятия</h3>
+                    <p>Организация транспорта для корпоративных и частных праздников. Создаем атмосферу веселья в дороге.</p>
+                    <ul class="service-features">
+                        <li>✓ Праздничное оформление</li>
+                        <li>✓ Развлекательная программа</li>
+                        <li>✓ Кейтеринг</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наш автопарк</h2>
+                <p>Современные и комфортабельные автобусы для любых задач</p>
+            </div>
+            <div class="fleet-grid">
+                <div class="fleet-card">
+                    <img src="https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?w=400&h=300&fit=crop" alt="Городской автобус">
+                    <div class="fleet-info">
+                        <h3>Городские автобусы</h3>
+                        <div class="fleet-specs">
+                            <span>👥 30-40 мест</span>
+                            <span>❄️ Кондиционер</span>
+                            <span>📱 USB-зарядка</span>
+                        </div>
+                        <p>Идеальны для городских маршрутов и коротких поездок</p>
+                    </div>
+                </div>
+                <div class="fleet-card">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&h=300&fit=crop" alt="Междугородний автобус">
+                    <div class="fleet-info">
+                        <h3>Междугородние автобусы</h3>
+                        <div class="fleet-specs">
+                            <span>👥 45-55 мест</span>
+                            <span>📺 Видеосистема</span>
+                            <span>🌐 Wi-Fi</span>
+                        </div>
+                        <p>Комфортные дальние поездки с максимальным удобством</p>
+                    </div>
+                </div>
+                <div class="fleet-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Туристический автобус">
+                    <div class="fleet-info">
+                        <h3>Туристические автобусы</h3>
+                        <div class="fleet-specs">
+                            <span>👥 35-50 мест</span>
+                            <span>🪟 Панорамные окна</span>
+                            <span>🎤 Микрофон</span>
+                        </div>
+                        <p>Специально оборудованы для экскурсий и туров</p>
+                    </div>
+                </div>
+                <div class="fleet-card">
+                    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&h=300&fit=crop" alt="Микроавтобус">
+                    <div class="fleet-info">
+                        <h3>Микроавтобусы</h3>
+                        <div class="fleet-specs">
+                            <span>👥 8-20 мест</span>
+                            <span>🛄 Багажник</span>
+                            <span>🚗 Маневренность</span>
+                        </div>
+                        <p>Для небольших групп и индивидуальных поездок</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Фотогалерея</h2>
+                <p>Наши автобусы, команда и счастливые пассажиры</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1570125909517-53cb21c89ff2?w=400&h=300&fit=crop" alt="Комфортабельные автобусы">
+                    <div class="gallery-overlay">
+                        <h3>Комфортабельные автобусы</h3>
+                        <p>Современный салон с кондиционером</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&h=300&fit=crop" alt="Междугородние перевозки">
+                    <div class="gallery-overlay">
+                        <h3>Междугородние перевозки</h3>
+                        <p>Надежные дальние маршруты</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Туристические автобусы">
+                    <div class="gallery-overlay">
+                        <h3>Туристические автобусы</h3>
+                        <p>Панорамные окна для путешествий</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&h=300&fit=crop" alt="Городские маршруты">
+                    <div class="gallery-overlay">
+                        <h3>Городские маршруты</h3>
+                        <p>Удобные поездки по городу</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400&h=300&fit=crop" alt="Профессиональные водители">
+                    <div class="gallery-overlay">
+                        <h3>Профессиональные водители</h3>
+                        <p>Опытные и вежливые специалисты</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Безопасность">
+                    <div class="gallery-overlay">
+                        <h3>Безопасность превыше всего</h3>
+                        <p>Регулярное техобслуживание</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-icon">🚌</div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Автобусов в парке</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🛣️</div>
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Маршрутов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Как нас найти</h2>
+                <p>г. Ростов-на-Дону, переулок Быстрый 2В</p>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=39.7%2C47.2%2C39.8%2C47.3&layer=mapnik&marker=47.25%2C39.75" 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0" 
+                    scrolling="no">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Свяжитесь с нами</h2>
+                <p>Оставьте заявку и мы свяжемся с вами в течение 15 минут</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Услуга</label>
+                            <select id="service" name="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="city">Городские перевозки</option>
+                                <option value="intercity">Междугородние рейсы</option>
+                                <option value="tourist">Туристические поездки</option>
+                                <option value="corporate">Корпоративные перевозки</option>
+                                <option value="wedding">Свадебные перевозки</option>
+                                <option value="events">Праздничные мероприятия</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Отправить заявку
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (863) 555-01-23</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@proftranstur.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>г. Ростов-на-Дону, переулок Быстрый 2В</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h3>Время работы</h3>
+                            <p>Ежедневно: 06:00 - 22:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ПрофТрансТур. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Быстрый заказ</h2>
+            <form id="quickOrderForm" onsubmit="submitQuickOrder(event)">
+                <div class="form-group">
+                    <label for="quickName">Имя *</label>
+                    <input type="text" id="quickName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="quickPhone">Телефон *</label>
+                    <input type="tel" id="quickPhone" name="phone" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    Заказать звонок
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
